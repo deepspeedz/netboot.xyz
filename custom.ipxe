@@ -8,5 +8,15 @@ echo Hello world!
 sleep 10
 goto custom_exit
 
+endpoints:
+  proxmox-ve:
+    path: /asset-mirror/releases/download/8.2-1-613c19ff/
+    files:
+    - initrd
+    - proxmox.iso
+    - vmlinuz
+    os: proxmox-ve
+    version: 8.2-1
+
 :custom_exit
 exit 0
